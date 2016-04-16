@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+  </head>
+  <body>
+    <header class="main-heider"> <!--В отличии от страницы barbershop-item сделал логотип и меню в разных блоках, так как логотп существено крупней меню. Целесообразно это?-->
+     <div>
+       <a href="index.html">
+         <img src="http://placehold.it/150x100" width="150" height="100" alt="Gllacy Shop">
+        </a>
+     </div>
+  <div class="heider-container"> 
+    <nav class="main-heider-navigation">
+      <ul>
+        <li class="heider-container-catalog">
+          <a href="#">Каталог</a>
+          <ul class="catalog-sub-menu">
+            <li>
+              <a href="#" class="sub-menu-new">Новинки</a>
+            </li>
+            <li class="sub-menu-line"></li>
+            <li>
+              <a href="#">Сливочное</a>
+            </li>
+            <li>
+              <a href="#">Щербеты</a>
+            </li>
+            <li>
+              <a href="#">Фруктовый лед</a>
+            </li>
+            <li>
+              <a href="#">Мелорин</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Доставка и оплата</a>
+        </li>
+        <li>
+          <a href="#">О Компании</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main-heider-user-block">
+    <ul>
+      <li class="main-heider-search">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Поиск" class="main-heider-search-img">
+        <form action="#" method="get" class="main-heider-search-block">
+          <input type="text" name="search" placeholder="Что ищем?">
+        </form>
+      </li>
+      <li class="main-heaider-enter">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Вход" class="main-heider-enter-img">
+        <p class="text-enter">Вход</p>
+          <div class="main-heider-enter-block">
+            <form action="#" method="post">
+              <input type="text" name="email" placeholder="Электронная почта">
+              <input type="password" name="password" placeholder="Пароль">
+              <input type="submit" name="enter" value="Войти">            
+            </form>
+            <ul>
+              <li>
+                <a href="#" class="forget-password">Забыли пароль?</a>  
+              </li>
+              <li>
+                <a href="#" class="log-in">Новая регистрация</a>  
+              </li>
+            </ul>
+          </div>
+      </li>
+      <li> 
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Корзина" class="main-heider-basket-img">
+        <p class="text-basket">Пусто</p>
+          <!--Не пониаю пока каким способом размечать всплывающую корзину. Я так понимаю, что это обыкновеные блоки с подлкюченными скриптами.-->
+        <div class="main-heider-basket-block">
+          <div class="goods-in-basket"> <!--я так понимаю сюда должен подключаться некий скрипт?-->
+            <form action="#" method="post">
+             <input type="checkbox" checked>
+             <ul>
+               <li>
+                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое"> 
+               </li>
+               <li>
+                 <p>Пломбир с апельсиновым джемом</p>
+               </li>
+               <li>
+                 <p>1,5 кг х 200руб.</p>  
+               </li>
+               <li>
+                 <p>300 руб.</p>  
+               </li>
+              </ul>
+            </form>
+          </div>
+          <div class="goods-in-basket">
+            <form action="#" method="post">
+             <input type="checkbox" checked>
+               <ul>
+                <li>
+                  <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое"> 
+                </li>
+                <li>
+                  <p>Клубничный пломбир с присыпкой из белого шоколада</p>
+                </li>
+                <li>
+                  <p>1,5 кг х 300руб.</p>  
+                </li>
+                <li>
+                  <p>450 руб.</p>  
+                </li>
+              </ul>
+            </form>
+          </div>
+          <div class="main-heider-basket-block-line"></div>
+          <div>
+            <p class="main-heider-basket-block-total">Итого: 750 руб.</p>  
+          </div>
+          <div class="main-heider-basket-block-make-order">
+            <a href="#" class="make-order">Оформить заказ</a>  
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="main-heider-contact">
+    <p class="main-heider-time-table">С 10 до 20, ежедневно</p>
+    <p class="main-heider-phone">8 812 450-25-25</p>
+  </div>
+</header>
+<main class="main-container">
+  <nav class="main-container-breadcrumbs">
+    <ul>
+      <li>
+        <a href="index.html">Главная</a>
+      </li>
+      <li>
+        <a href="#">Каталог</a>
+      </li>
+      <li>Сливочное</li>
+    </ul>
+  </nav>
+  <h1>Сливочное мороженое</h1>
+  <div class="container-filter">
+    <form action="#" method="get">
+      <div class="container-filter-select">
+        <p class="sorting-title">Сортировка:</p>
+          <div class="sorting">
+            <select name="sort">
+              <option value="pop">По популярности</option>
+              <option value="energy">По калорийности</option>
+            </select>
+          </div>
+      </div>
+      <div class="container-filter-bar">
+          <div class="sorting-title"> Цена
+            <input class="min-price" type="text" value="100"> руб. -
+            <input class="max-price" type="text" value="500"> руб.
+          </div>
+          <div class="sorting">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+          </div>
+        </div>
+        <div class="container-filter-radio">
+          <p class="sorting-title">Жирность:</p>
+          <div class="sorting">
+            <input type="radio" name="fat-content" value="0" id="0">
+            <label for="0">0%</label>
+            <input type="radio" name="fat-content" value="10" id="10" checked>
+            <label for="10">до 10%</label>
+            <input type="radio" name="fat-content" value="30" id="30">
+            <label for="30">до 30%</label>
+            <input type="radio" name="fat-content" value="40" id="40">
+            <label for="40">выше 30%</label>
+          </div>
+        </div>
+        <div class="container-filter-checkbox">
+          <p class="sorting-title">Наполнители:</p>
+          <div class="sorting">
+          <input type="checkbox" name="choko" id="choko" checked>
+          <label for="choko">шоколадные</label>
+          <input type="checkbox" name="sugar" id="sugar" checked>
+          <label for="sugar">сахарные присыпки</label>
+          <input type="checkbox" name="fruit" id="fruit">
+          <label for="fruit">фрукты</label>
+          <input type="checkbox" name="syrup" id="syrup">
+          <label for="syrup">сиропы</label>
+          <input type="checkbox" name="jam" id="jam">
+          <label for="jam">джемы</label>
+          </div>
+        </div>
+        <input type="submit" value="Применить">
+    </form>  
+  </div>
+  <div class="container-goods">
+    <article class="goods 1-goods">
+      <div class="good-image good-image-1"></div>
+      <p class="good-cost">310 &#8381;/кг</p>
+      <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой
+        <a href="#" class="blocked">Быстрый просмотр</a>
+      </a>
+    </article>
+    <article class="goods 2-goods">
+      <div class="good-image good-image-2"></div>
+      <p class="good-cost">380 &#8381;/кг</p>
+      <a href="#">Сливочно-кофейное с кусочками шоколада
+        <a href="#" class="blocked">Быстрый просмотр</a>
+      </a>
+    </article>
+    <article class="goods 3-goods">
+      <div class="good-image good-image-3"></div>
+      <p class="good-cost">355 &#8381;/кг</p>
+      <a href="#">Сливочно-клубничное с присыпкой из белого шоколада
+        <a href="#" class="blocked">Быстрый просмотр</a>
+      </a>
+    </article>
+    <article class="goods 4-goods">
+      <div class="good-image good-image-4"></div>
+      <p class="good-cost">415 &#8381;/кг</p>
+      <a href="#">Сливочное крем-брюле с карамельной подливкой
+        <a href="#" class="blocked">Быстрый просмотр</a>  
+      </a>
+    </article>
+    <article class="goods 5-goods">
+      <div class="good-image good-image-5"></div>
+      <p class="good-cost">325 &#8381;/кг</p>
+      <a href="#">Сливочное с брусничным джемом
+        <a href="#" class="blocked">Быстрый просмотр</a>  
+      </a>
+    </article>
+    <article class="goods 6-goods">
+      <div class="good-image good-image-6"></div>
+      <p class="good-cost">410 &#8381;/кг</p>
+      <a href="#">Сливочно-черничное с цельными ягодами черники
+        <a href="#" class="blocked">Быстрый просмотр</a>  
+      </a>
+    </article>
+    <article class="goods 7-goods">
+      <div class="good-image good-image-7"></div>
+      <p class="good-cost">375 &#8381;/кг</p>
+      <a href="#">Сливочно-лимнное с карамельной присыпкой
+        <a href="#" class="blocked">Быстрый просмотр</a>  
+      </a>
+    </article>
+    <article class="goods 8-goods">
+      <div class="good-image good-image-8"></div>
+      <p class="good-cost">320 &#8381;/кг</p>
+      <a href="#">Сливочное с шоколадной стружкой
+        <a href="#" class="blocked">Быстрый просмотр</a>  
+      </a>
+    </article>
+    <article class="goods 9-goods">
+      <div class="good-image good-image-9"></div>
+      <p class="good-cost">440 &#8381;/кг</p>
+      <a href="#">Сливочно-ванильное с кусочками шоколада
+        <a href="#" class="blocked">Быстрый просмотр</a>  
+      </a>
+    </article>
+    <article class="goods 10-goods">
+      <div class="good-image good-image-10"></div>
+      <p class="good-cost">435 &#8381;/кг</p>
+      <a href="#">Сливочное с ментоловым сиропом
+        <a href="#" class="blocked">Быстрый просмотр</a>  
+      </a>
+    </article>
+    <article class="goods 11-goods">
+      <div class="good-image good-image-11"></div>
+      <p class="good-cost">355 &#8381;/кг</p>
+      <a href="#">Сливочное с кусочками черного шоколада
+        <a href="#" class="blocked">Быстрый просмотр</a>  
+      </a>
+    </article>
+    <article class="goods 12-goods">
+      <div class="good-image good-image-12"></div>
+      <p class="good-cost">420 &#8381;/кг</p>
+      <a href="#">Сливочное с мятным сиропом
+        <a href="#" class="blocked">Быстрый просмотр</a>  
+      </a>
+    </article>
+  </div>
+  <div class="container-pages">
+    <ul>
+      <li class="pages-left">
+        <a href="#"></a>
+      </li>
+      <li>
+        <a href="#">1</a>
+      </li>
+      <li>
+        <a href="#">2</a>
+      </li>
+      <li>
+        <a href="#">3</a>
+      </li>
+      <li>
+        <a href="#">4</a>
+      </li>
+      <li>
+        <a href="#">5</a>
+      </li>
+      <li class="pages-right">
+        <a href="#"></a>
+      </li>
+    </ul>  
+  </div>
+</main>
+<footer class="main-footer">
+  <section class="footer-social">
+    <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>          
+  </section>
+  <section class="footer-info">
+    <div class="footer-info-left">
+      <a href="#" class="footer-info-supplier">Для поставщиков</a>
+      <a href="#">О производстве</a>
+    </div>
+    <div class="footer-info-right">
+      <a href="#">Наши документы</a>
+      <a href="#">Экологические стандарты</a>
+    </div>
+  </section>
+  <section class="footer-copyright">
+    <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип HTML Academy">
+    <p>Сделано в
+      <a href="www.htmlacademy.ru">HTML Academy</a>
+      	&copy; 2016</p>
+  </section>
+</footer>
+</body>
+</html>
