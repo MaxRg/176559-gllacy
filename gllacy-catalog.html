@@ -6,132 +6,121 @@
   </head>
   <body>
     <header class="main-heider"> <!--В отличии от страницы barbershop-item сделал логотип и меню в разных блоках, так как логотп существено крупней меню. Целесообразно это?-->
-     <div>
-       <a href="index.html">
-         <img src="http://placehold.it/150x100" width="150" height="100" alt="Gllacy Shop">
-        </a>
-     </div>
-  <div class="heider-container"> 
-    <nav class="main-heider-navigation">
-      <ul>
-        <li class="heider-container-catalog">
-          <a href="#">Каталог</a>
-          <ul class="catalog-sub-menu">
-            <li>
-              <a href="#" class="sub-menu-new">Новинки</a>
+      <div class="logo"><!--Учтено--><!-- Добавить класс .logo -->
+      <a href="index.html">
+       <img src="http://placehold.it/150x100" width="150" height="100" alt="Gllacy Shop">
+      </a>
+      </div>
+      <div class="heider-container"> 
+        <nav class="heider-navigation">
+          <ul class="top-ul"><!--Учтено--><!-- Лучше дать класс, чтобы потом не писать вложенных селекторов -->
+            <li class="heider-catalog top-li-item">
+              <a href="#" class="top-link">Каталог</a><!--Учтено--><!-- Лучше дать класс, чтобы потом не писать вложенных селекторов -->
+              <ul class="catalog-sub-menu">
+                <li class="second-li-item"><!--Учтено--><!-- Лучше дать класс, чтобы потом не писать вложенных селекторов -->
+                  <a href="#" class="second-link">Новинки</a>
+                </li>
+                <li class="sub-menu-line"></li>
+                <li class="second-li-item"><!--Учтено--><!-- Лучше дать класс, чтобы потом не писать вложенных селекторов -->
+                  <a href="#" class="second-link">Сливочное</a>
+                </li>
+                <li class="second-li-item"><!--Учтено--><!-- Лучше дать класс, чтобы потом не писать вложенных селекторов -->
+                  <a href="#" class="second-link">Щербеты</a>
+                </li>
+                <li class="second-li-item"><!--Учтено--><!-- Лучше дать класс, чтобы потом не писать вложенных селекторов -->
+                  <a href="#" class="second-link">Фруктовый лед</a>
+                </li>
+                <li class="second-li-item"><!--Учтено--><!-- Лучше дать класс, чтобы потом не писать вложенных селекторов -->
+                  <a href="#" class="second-link">Мелорин</a>
+                </li>
+              </ul>
             </li>
-            <li class="sub-menu-line"></li>
-            <li>
-              <a href="#">Сливочное</a>
+            <li class="top-li-item"><!--Учтено--><!-- Лучше дать класс, чтобы потом не писать вложенных селекторов -->
+              <a href="#" class="top-link">Доставка и оплата</a><!-- Лучше дать класс, чтобы потом не писать вложенных селекторов -->
             </li>
-            <li>
-              <a href="#">Щербеты</a>
-            </li>
-            <li>
-              <a href="#">Фруктовый лед</a>
-            </li>
-            <li>
-              <a href="#">Мелорин</a>
+            <li class="top-li-item"><!--Учтено--><!-- Лучше дать класс, чтобы потом не писать вложенных селекторов -->
+              <a href="#" class="top-link">О Компании</a><!--Учтено--><!-- Лучше дать класс, чтобы потом не писать вложенных селекторов -->
             </li>
           </ul>
-        </li>
-        <li>
-          <a href="#">Доставка и оплата</a>
-        </li>
-        <li>
-          <a href="#">О Компании</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="main-heider-user-block">
-    <ul>
-      <li class="main-heider-search">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Поиск" class="main-heider-search-img">
-        <form action="#" method="get" class="main-heider-search-block">
-          <input type="text" name="search" placeholder="Что ищем?">
-        </form>
-      </li>
-      <li class="main-heaider-enter">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Вход" class="main-heider-enter-img">
-        <p class="text-enter">Вход</p>
-          <div class="main-heider-enter-block">
-            <form action="#" method="post">
-              <input type="text" name="email" placeholder="Электронная почта">
-              <input type="password" name="password" placeholder="Пароль">
-              <input type="submit" name="enter" value="Войти">            
-            </form>
-            <ul>
-              <li>
-                <a href="#" class="forget-password">Забыли пароль?</a>  
-              </li>
-              <li>
-                <a href="#" class="log-in">Новая регистрация</a>  
-              </li>
-            </ul>
-          </div>
-      </li>
-      <li> 
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Корзина" class="main-heider-basket-img">
-        <p class="text-basket">Пусто</p>
-          <!--Не пониаю пока каким способом размечать всплывающую корзину. Я так понимаю, что это обыкновеные блоки с подлкюченными скриптами.-->
-        <div class="main-heider-basket-block">
-          <div class="goods-in-basket"> <!--я так понимаю сюда должен подключаться некий скрипт?-->
-            <form action="#" method="post">
-             <input type="checkbox" checked>
-             <ul>
-               <li>
-                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое"> 
-               </li>
-               <li>
-                 <p>Пломбир с апельсиновым джемом</p>
-               </li>
-               <li>
-                 <p>1,5 кг х 200руб.</p>  
-               </li>
-               <li>
-                 <p>300 руб.</p>  
-               </li>
-              </ul>
-            </form>
-          </div>
-          <div class="goods-in-basket">
-            <form action="#" method="post">
-             <input type="checkbox" checked>
-               <ul>
-                <li>
-                  <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое"> 
-                </li>
-                <li>
-                  <p>Клубничный пломбир с присыпкой из белого шоколада</p>
-                </li>
-                <li>
-                  <p>1,5 кг х 300руб.</p>  
-                </li>
-                <li>
-                  <p>450 руб.</p>  
-                </li>
-              </ul>
-            </form>
-          </div>
-          <div class="main-heider-basket-block-line"></div>
-          <div>
-            <p class="main-heider-basket-block-total">Итого: 750 руб.</p>  
-          </div>
-          <div class="main-heider-basket-block-make-order">
-            <a href="#" class="make-order">Оформить заказ</a>  
-          </div>
+        </nav>
+      </div>
+      <div class="heider-right"><!--Учтено--><!-- Блок обертка для двух нижних блоков -->
+        <div class="heider-user-block">
+          <ul>
+            <li class="heider-search">
+<!--Учтено--><!-- Иконки вствляем не картинками а фоновыми изображениями -->
+              <form action="#" method="get" class="heider-search-block">
+                <input type="text" name="search" placeholder="Что ищем?">
+              </form>
+            </li>
+            <li class="heaider-enter">
+<!--Учтено--><!-- Иконки вствляем не картинками а фоновыми изображениями -->
+              <p class="text-enter">Вход</p>
+              <div class="heider-enter-block">
+                <form action="#" method="post" name="room" id="enter"><!--Учтено--><!-- Укажи у формы имя -->
+                  <input type="email" name="email" placeholder="Электронная почта"><!--Учтено--><!-- type email -->
+                  <input type="password" name="password" placeholder="Пароль">
+                  <!--Учтено--><!-- Выносим кнопку за форму -->
+                </form>
+                <div>
+                  <input type="submit" value="Войти" form="enter">
+                  <div>
+                    <a href="#" class="forget-password">Забыли пароль?</a>  
+                    <a href="#" class="log-in">Новая регистрация</a>  
+                  </div>
+                </div>
+                <!--Учтено-->   <!-- Структура должна быть прмиерно следующая -->
+                <!-- <div>
+                  <button>Войти</button> - добавить нужные атрибуты http://htmlbook.ru/html/button/form или http://htmlbook.ru/html/input/form
+                  <div>
+                    <a href="#" class="forget-password">Забыли пароль?</a>  
+                    <a href="#" class="log-in">Новая регистрация</a>  
+                  </div>
+                </div> -->
+              </div>
+            </li>
+            <li class="heider-basket"><!--Учтено--><!-- Необходим класс -->
+              <!--Учтено--><!-- Иконки вствляем не картинками а фоновыми изображениями -->
+              <p class="text-basket">Пусто</p>
+                  <form action="#" method="post" class="heider-basket-block"><!--Учтено--><!-- Формы не надо делать две, это будет одна большая форма, и кнопку оформить заказ туда же положи в форму -->
+                  <!-- Лучше всеэто прееделай на table, это табличные данные и пусть отображаются в виде таблицы, можно через css сделать таблицу, но списки лишние -->
+                  <!--Пока оставил checkbox--><!-- Можешь просто <span class="reset">Отменить товар</span> -->
+                      <table class="basket-table">
+                        <tr class="basket-table-tr">
+                          <td><input type="checkbox" checked></td>
+                          <td><img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое"></td>
+                          <td>Пломбир с апельсиновым джемом</td>
+                          <td>1,5 кг х 200руб.</td>
+                          <td>300 руб.</td>
+                        </tr>
+                        <tr class="basket-table-tr">
+                          <td><input type="checkbox" checked></td>
+                          <td><img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое"></td>
+                          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                          <td>1,5 кг х 300руб.</td>
+                          <td>450 руб.</td>
+                        </tr>
+                        <tr class="basket-table-tr">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td colspan="2">Итого: 750 руб.</td>
+                        </tr>
+                      </table>
+                      <input type="submit" name="make-order" value="Оформить заказ">
+                  </form><!--Учтено--><!-- Линию можем сделать как нижния граница таблицы, или псевдоэлементом, ради этого не надо писать тег пустой -->
+            </li>
+          </ul>
         </div>
-      </li>
-    </ul>
-  </div>
-  <div class="main-heider-contact">
-    <p class="main-heider-time-table">С 10 до 20, ежедневно</p>
-    <p class="main-heider-phone">8 812 450-25-25</p>
-  </div>
-</header>
+        <div class="heider-contact">
+          <p class="heider-time-table">С 10 до 20, ежедневно</p>
+          <p class="heider-phone">8 812 450-25-25</p>
+        </div>
+      </div>
+      <!--Учтено--><!-- Конец блока обертки -->
+    </header>
 <main class="main-container">
-  <nav class="main-container-breadcrumbs">
+  <nav class="container-breadcrumbs">
     <ul>
       <li>
         <a href="index.html">Главная</a>
@@ -142,150 +131,217 @@
       <li>Сливочное</li>
     </ul>
   </nav>
-  <h1>Сливочное мороженое</h1>
-  <div class="container-filter">
-    <form action="#" method="get">
-      <div class="container-filter-select">
-        <p class="sorting-title">Сортировка:</p>
-          <div class="sorting">
-            <select name="sort">
-              <option value="pop">По популярности</option>
-              <option value="energy">По калорийности</option>
-            </select>
-          </div>
-      </div>
-      <div class="container-filter-bar">
-          <div class="sorting-title"> Цена
-            <input class="min-price" type="text" value="100"> руб. -
+  <h1 class="main-title">Сливочное мороженое</h1><!--Учтено--><!-- Класс добавить -->
+  <!--Учтено--><!-- этот класс даем форме, а сам div убираем -->
+    <form action="#" method="get" class="container-filter">
+      <fieldset class="container-filter-select"><!--Учтено--><!-- fieldset -->
+        <legend class="sorting-title">Сортировка:</legend><!--Учтено--><!-- legend -->
+        <div class="sorting">
+          <select name="sort">
+            <option value="pop">По популярности</option>
+            <option value="energy">По калорийности</option>
+            <!-- Неверные включены, смотрим макет *.psd -->
+          </select>
+        </div>
+      </fieldset>
+      <fieldset class="container-filter-bar"><!--Учтено--><!-- fieldset -->
+        <legend class="sorting-title">Цена</legend>
+        <div class="sorting"><!--Учтено--><!-- legend -->
+          <!--Учтено--><!-- Каждый input оберни в span и дефис тоже в span -->
+          <span>
+            <input class="min-price" type="text" value="100"> руб.
+          </span>
+          <span>-</span>
+          <span>
             <input class="max-price" type="text" value="500"> руб.
-          </div>
-          <div class="sorting">
-            <div class="scale">
-              <div class="bar"></div>
-            </div>
-            <div class="toggle min-toggle"></div>
-            <div class="toggle max-toggle"></div>
-          </div>
+          </span>
         </div>
-        <div class="container-filter-radio">
-          <p class="sorting-title">Жирность:</p>
-          <div class="sorting">
-            <input type="radio" name="fat-content" value="0" id="0">
-            <label for="0">0%</label>
-            <input type="radio" name="fat-content" value="10" id="10" checked>
-            <label for="10">до 10%</label>
-            <input type="radio" name="fat-content" value="30" id="30">
-            <label for="30">до 30%</label>
-            <input type="radio" name="fat-content" value="40" id="40">
-            <label for="40">выше 30%</label>
+        <div class="sorting">
+          <div class="scale">
+            <div class="bar"></div>
           </div>
+          <div class="toggle min-toggle">Меньше цена</div><!--Учтено--><!-- указать внутри текс Больше -->
+          <div class="toggle max-toggle">Больше цена</div><!--Учтено--><!-- указать внутри текс Меньше -->
         </div>
-        <div class="container-filter-checkbox">
-          <p class="sorting-title">Наполнители:</p>
+      </fieldset>
+      <fieldset class="container-filter-fat"><!--Учтено--><!-- Неверный класс, container-filter-fat. Заменить на fieldset -->
+        <legend class="sorting-title">Жирность:</legend><!--Учтено--><!-- legend -->
+        <div class="sorting">
+          <input type="radio" name="fat-content" value="0" id="0">
+          <label for="0">0%</label>
+          <input type="radio" name="fat-content" value="10" id="10" checked>
+          <label for="10">до 10%</label>
+          <input type="radio" name="fat-content" value="30" id="30">
+          <label for="30">до 30%</label>
+          <input type="radio" name="fat-content" value="40" id="40">
+          <label for="40">выше 30%</label>
+        </div>
+      </fieldset>
+      <fieldset class="container-filter-check"><!--Учтено--><!-- fieldset. Другой класс выбери-->
+          <p class="sorting-title">Наполнители:</p><!-- legend -->
           <div class="sorting">
-          <input type="checkbox" name="choko" id="choko" checked>
-          <label for="choko">шоколадные</label>
-          <input type="checkbox" name="sugar" id="sugar" checked>
-          <label for="sugar">сахарные присыпки</label>
-          <input type="checkbox" name="fruit" id="fruit">
-          <label for="fruit">фрукты</label>
-          <input type="checkbox" name="syrup" id="syrup">
-          <label for="syrup">сиропы</label>
-          <input type="checkbox" name="jam" id="jam">
-          <label for="jam">джемы</label>
+            <input type="checkbox" name="choko" id="choko" checked>
+            <label for="choko">шоколадные</label>
+            <input type="checkbox" name="sugar" id="sugar" checked>
+            <label for="sugar">сахарные присыпки</label>
+            <input type="checkbox" name="fruit" id="fruit">
+            <label for="fruit">фрукты</label>
+            <input type="checkbox" name="syrup" id="syrup">
+            <label for="syrup">сиропы</label>
+            <input type="checkbox" name="jam" id="jam">
+            <label for="jam">джемы</label>
           </div>
-        </div>
-        <input type="submit" value="Применить">
-    </form>  
-  </div>
+      </fieldset>
+      <input type="submit" value="Применить">
+    </form>
   <div class="container-goods">
-    <article class="goods 1-goods">
-      <div class="good-image good-image-1"></div>
-      <p class="good-cost">310 &#8381;/кг</p>
-      <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой
+    <article class="goods"><!--Учтено--><!-- Класс 1-goods - не нужен -->
+      <div class="goods-image">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое">
+        <p class="good-cost">310
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Символ рубля">/кг
+        </p><!--Учтено--><!-- Иконку рубля добавим картинкой. Этот блок должен лежать внутри блока с картинкой-->
+      </div><!--Учтено--><!-- Внутрь вставить img. good-image-1 - не нужен класс -->
+        <p class="goods-name">
+          <a href="#" class="goods-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a><!--Учтено-><!-- Ссыклка в ссылке не работает. Это должно быть две ссылки. Первая заключена в теге p -->
+        </p>
         <a href="#" class="blocked">Быстрый просмотр</a>
-      </a>
     </article>
-    <article class="goods 2-goods">
-      <div class="good-image good-image-2"></div>
-      <p class="good-cost">380 &#8381;/кг</p>
-      <a href="#">Сливочно-кофейное с кусочками шоколада
-        <a href="#" class="blocked">Быстрый просмотр</a>
-      </a>
+    <article class="goods">
+      <div class="good-image">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое">
+        <p class="good-cost">380
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Символ рубля">/кг
+        </p>
+      </div>
+      <p class="goods-name">
+        <a href="#" class="goods-link">Сливочно-кофейное с кусочками шоколада</a>
+      </p>
+      <a href="#" class="blocked">Быстрый просмотр</a>
     </article>
-    <article class="goods 3-goods">
-      <div class="good-image good-image-3"></div>
-      <p class="good-cost">355 &#8381;/кг</p>
-      <a href="#">Сливочно-клубничное с присыпкой из белого шоколада
-        <a href="#" class="blocked">Быстрый просмотр</a>
-      </a>
+    <article class="goods">
+      <div class="good-image">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое">
+        <p class="good-cost">355
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Символ рубля">/кг
+        </p>
+      </div>
+      <p class="goods-name">
+      <a href="#" class="goods-link">Сливочно-клубничное с присыпкой из белого шоколада</a>
+      </p>
+      <a href="#" class="blocked">Быстрый просмотр</a>
     </article>
-    <article class="goods 4-goods">
-      <div class="good-image good-image-4"></div>
-      <p class="good-cost">415 &#8381;/кг</p>
-      <a href="#">Сливочное крем-брюле с карамельной подливкой
-        <a href="#" class="blocked">Быстрый просмотр</a>  
-      </a>
+    <article class="goods">
+      <div class="good-image">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое">
+        <p class="good-cost">415
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Символ рубля">/кг
+        </p>
+      </div>
+      <p class="goods-name">
+        <a href="#" class="goods-link">Сливочное крем-брюле с карамельной подливкой</a>
+      </p>
+      <a href="#" class="blocked">Быстрый просмотр</a>  
     </article>
-    <article class="goods 5-goods">
-      <div class="good-image good-image-5"></div>
-      <p class="good-cost">325 &#8381;/кг</p>
-      <a href="#">Сливочное с брусничным джемом
-        <a href="#" class="blocked">Быстрый просмотр</a>  
-      </a>
+    <article class="goods">
+      <div class="good-image">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое">
+        <p class="good-cost">325
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Символ рубля">/кг
+        </p>
+      </div>
+      <p class="goods-name">
+        <a href="#" class="goods-link">Сливочное с брусничным джемом</a>
+      </p>
+      <a href="#" class="blocked">Быстрый просмотр</a>  
     </article>
-    <article class="goods 6-goods">
-      <div class="good-image good-image-6"></div>
-      <p class="good-cost">410 &#8381;/кг</p>
-      <a href="#">Сливочно-черничное с цельными ягодами черники
-        <a href="#" class="blocked">Быстрый просмотр</a>  
-      </a>
+    <article class="goods">
+      <div class="good-image">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое">
+        <p class="good-cost">410
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Символ рубля">/кг
+        </p>
+      </div>
+      <p class="goods-name">
+        <a href="#" class="goods-link">Сливочно-черничное с цельными ягодами черники</a>
+      </p>
+      <a href="#" class="blocked">Быстрый просмотр</a>
     </article>
-    <article class="goods 7-goods">
-      <div class="good-image good-image-7"></div>
-      <p class="good-cost">375 &#8381;/кг</p>
-      <a href="#">Сливочно-лимнное с карамельной присыпкой
-        <a href="#" class="blocked">Быстрый просмотр</a>  
-      </a>
+    <article class="goods">
+      <div class="good-image">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое">
+        <p class="good-cost">375
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Символ рубля">/кг
+        </p>
+      </div>
+      <p class="goods-name">
+        <a href="#" class="goods-link">Сливочно-лимнное с карамельной присыпкой</a>
+      </p>
+      <a href="#" class="blocked">Быстрый просмотр</a>
     </article>
-    <article class="goods 8-goods">
-      <div class="good-image good-image-8"></div>
-      <p class="good-cost">320 &#8381;/кг</p>
-      <a href="#">Сливочное с шоколадной стружкой
-        <a href="#" class="blocked">Быстрый просмотр</a>  
-      </a>
+    <article class="goods">
+      <div class="good-image">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое">
+        <p class="good-cost">320
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Символ рубля">/кг
+        </p>
+      </div>
+      <p class="goods-name">
+        <a href="#" class="goods-link">Сливочное с шоколадной стружкой</a>
+      </p>
+      <a href="#" class="blocked">Быстрый просмотр</a>
     </article>
-    <article class="goods 9-goods">
-      <div class="good-image good-image-9"></div>
-      <p class="good-cost">440 &#8381;/кг</p>
-      <a href="#">Сливочно-ванильное с кусочками шоколада
-        <a href="#" class="blocked">Быстрый просмотр</a>  
-      </a>
+    <article class="goods">
+      <div class="good-image">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое">
+        <p class="good-cost">440
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Символ рубля">/кг
+        </p>
+      </div>
+      <p class="goods-name">
+        <a href="#" class="goods-link">Сливочно-ванильное с кусочками шоколада</a>
+      </p>
+      <a href="#" class="blocked">Быстрый просмотр</a>
     </article>
-    <article class="goods 10-goods">
-      <div class="good-image good-image-10"></div>
-      <p class="good-cost">435 &#8381;/кг</p>
-      <a href="#">Сливочное с ментоловым сиропом
-        <a href="#" class="blocked">Быстрый просмотр</a>  
-      </a>
+    <article class="goods">
+      <div class="good-image">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое">
+        <p class="good-cost">435
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Символ рубля">/кг
+        </p>
+      </div>
+      <p class="goods-name">
+        <a href="#" class="goods-link">Сливочное с ментоловым сиропом</a>
+      </p>
+      <a href="#" class="blocked">Быстрый просмотр</a>
     </article>
-    <article class="goods 11-goods">
-      <div class="good-image good-image-11"></div>
-      <p class="good-cost">355 &#8381;/кг</p>
-      <a href="#">Сливочное с кусочками черного шоколада
-        <a href="#" class="blocked">Быстрый просмотр</a>  
-      </a>
+    <article class="goods">
+      <div class="good-image">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое">
+        <p class="good-cost">355
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Символ рубля">/кг
+        </p>
+      </div>
+      <p class="goods-name">
+        <a href="#" class="goods-link">Сливочное с кусочками черного шоколада</a>
+      </p>
+      <a href="#" class="blocked">Быстрый просмотр</a>  
     </article>
-    <article class="goods 12-goods">
-      <div class="good-image good-image-12"></div>
-      <p class="good-cost">420 &#8381;/кг</p>
-      <a href="#">Сливочное с мятным сиропом
-        <a href="#" class="blocked">Быстрый просмотр</a>  
-      </a>
+    <article class="goods">
+      <div class="good-image">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Мороженое">
+        <p class="good-cost">420
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Символ рубля">/кг
+        </p>
+      </div>
+      <p class="goods-name">
+        <a href="#" class="goods-link">Сливочное с мятным сиропом</a>
+      </p>
+      <a href="#" class="blocked">Быстрый просмотр</a>
     </article>
   </div>
-  <div class="container-pages">
-    <ul>
+  <!--Учтено--><!-- Этот класс назначить для ul, а сам div - лишний -->
+    <ul class="container-pages">
       <li class="pages-left">
         <a href="#"></a>
       </li>
@@ -307,8 +363,7 @@
       <li class="pages-right">
         <a href="#"></a>
       </li>
-    </ul>  
-  </div>
+    </ul>
 </main>
 <footer class="main-footer">
   <section class="footer-social">
@@ -328,9 +383,10 @@
     </div>
   </section>
   <section class="footer-copyright">
+    <!-- Картинку оберни в ссылку -->
     <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип HTML Academy">
     <p>Сделано в
-      <a href="www.htmlacademy.ru">HTML Academy</a>
+      <a href="http://htmlacademy.ru">HTML Academy</a><!--Учтено--><!-- Адрес надо указывать с http:// или https:// -->
       	&copy; 2016</p>
   </section>
 </footer>
