@@ -1,0 +1,20 @@
+html, body {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #000000;
+}
+
+h1 {
+  font-family: 'Roboto Black';
+  font-size: 60px;
+  line-height: 60,35px; <!-- Не понятно, почему такое маленькое значение. На макете смотрится плохо.-->
+}
+
+h2 {
+  font-family: 'Roboto Bold';
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 41px;
+}
