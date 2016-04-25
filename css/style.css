@@ -3,18 +3,474 @@ html, body {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
+html {
+  background-color: #ffffff;
+}
+body {
+  width: 860px;
+  padding: 0 20px;
+  background-color: #849d8f;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix:after{
+  content:'';
+  display:table;
+  clear:both;
+}
+
+heider {
+  width: 900px;
+  min-height: 74px;
+  outline: 1px solid red;
+}
+
+.heider-logo {
+  width: 154px;
+  margin-left: -5px;
+  display: inline-block
+}
+
+.heider-navigation {
+  width: 390px;
+  min-height: 74px;
+  display: inline-block;
+}
+
+.top-ul > li {
+  float: left;
+  list-style: none;
+  position: relative;
+  margin-right: 20px;
+}
+
+.top-ul a {
+  display: block;
+}
+
+.heider-sub-menu {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  z-index: 10;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+.top-ul > li:hover .heider-sub-menu {
+  display: block;
+}
+
+.heider-user-block {
+  width: 263px;
+  min-height: 74px;
+  float: right;
+}
+
+/*.user-block-ul > li {
+  float: right;
+  list-style: none;
+  position: relative;
+  margin-left: 20px;
+}
+
+.heider-search {
+  background-image: url(/img/gllacy-icons/heider-search.svg);
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;background-position: 50% 50%;
+}
+
+.user-block-ul {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  z-index: 10;
+  width: 341px;
+  height: 84px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+.user-block-ul > li:hover .heider-search-block {
+  display: block;
+}*/
+
+.container {
+  position: relative;
+}
+.main-contact {
+  width: 170px;
+  height: 45px;
+  float: right;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.main-banner {
+  width: 900px;
+  min-height: 574px;
+}
 h1 {
   font-family: 'Roboto Black';
   font-size: 60px;
   line-height: 60,35px; <!-- Не понятно, почему такое маленькое значение. На макете смотрится плохо.-->
 }
 
-h2 {
+.container-promoaction {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.container-promoaction-block {
+  width: 420px;
+  height: 230px;
+  position: relative;
+}
+
+.promoaction-title {
+  width: 370px;
   font-family: 'Roboto Bold';
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 18px; 
+}
+
+.promoaction-text {
+  margin: 0 20px;
+}
+
+.promoaction-link {
+  width: 165px;
+  height: 44px;
+  border-radius: 19px;
+  position: absolute;
+  top: 161px;
+  right: 21px;
+  background-color: #f16642;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.container-promoaction-left {
+  float: left;
+  background-image: url(/img/gllacy-index/container-promoaction-left.jpg);
+  background-position: center;
+  border-radius: 12px;
+}
+
+.container-promoaction-right {
+  float: right;
+  background-image: url(/img/gllacy-index/container-promoaction-right.jpg);
+  background-position: center;
+  border-radius: 12px;
+}
+
+.container-goods {
+  min-height: 317px;
+  box-sizing: border-box;
+  
+}
+
+.container-goods .goods {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin-right: 16px;
+}
+
+.container-goods .goods:nth-child(4n) {
+  margin-right: 0;
+}
+
+.goods-image {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.goods-name { /*Может стоит тогда в HTML заменить span на img?*/
+  background-image: url(/img/gllacy-index/hit-name.png);
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.goods-cost {
+  position: absolute; /*Или сделать img фоном и работать с absolute?*/
+  top: 0;
+  z-index: 100;
+  top: 145px;
+  left: 0px;
+}
+
+.goods-text {
+  text-align: center;
+}
+
+.goods-text a {
+  color: #ffffff;
+}
+
+.features {
+  width: 860px;
+  height: 372px;
+  background-image: url(/img/gllacy-index/features-background.jpg);
+  color: #000000;
+  border-radius: 13px;
+  box-sizing: border-box;
+  padding-top: 29px;
+  margin-bottom: 40px;
+}
+
+.features-title {
+  margin: 0 20px;
+  margin-bottom: 10px;
+}
+
+.features-item {
+  width: 400px;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 16px;
+}
+
+.features-item:nth-child(even) {
+  margin-left: 20px;
+}
+
+.features-icon {
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4px;
+}
+
+.features-icon-1 {
+  background-image: url(/img/gllacy-icons/gllacy-icon-icecream.svg);
+}
+
+.features-icon-2 {
+  background-image: url(/img/gllacy-icons/gllacy-icon-cow.svg)
+}
+
+.features-icon-3 {
+  background-image: url(/img/gllacy-icons/gllacy-icon-leaf.svg)
+}
+
+.features-icon-4 {
+  background-image: url(/img/gllacy-icons/gllacy-icon-thermometer.svg)
+}
+
+.features-item-text {
+  width: 345px;
+  display: inline-block;
+}
+
+.container-blog-mail {
+  margin-bottom: 40px;
+}
+
+.container-blog, .container-mailing {
+  width: 420px;
+  height: 220px;
+  border-radius: 13px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.container-blog {
+  background-image: url(/img/gllacy-index/container-blog.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  margin-right: 16px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.container-blog-title {
+  font-size: 16px;
+  color: #000000;
+}
+
+.container-blog-link {
+  font-size: 24px;
+  color: #000000;
+}
+.container-mailing {
+  /*border: 10px solid url(/img/gllacy-index/container-mailing-border.png);*/
+  background-color: #f8f7f4;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.container-mailing-title {
+  color: #5a5a5a;
+}
+
+.container-map-contacts {
+  width: 900px;
+  height: 430px;
+  position: relative;
+  background-image: url(/img/gllacy-index/container-map.jpg);
+  margin-left:  -20px;
+}
+
+.map-point {
+  background-image: url(/img/gllacy-index/map-point.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 32%;
+  left: 29.5%;
+  z-index: 100;
+  width: 218px;
+  height: 142px;
+}
+
+.container-center {
+  width: 302px;
+  height: 305px;
+  z-index: 100;
+  border-radius: 13px;
+  position: absolute;
+  top: 62px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  box-sizing: border-box;
+  padding-left: 25px;
+}
+
+.container-contacts-modalwindow {
+  display: block;
+  width: 252px;
+  height: 45px;
+  border-radius: 18px;
+  background-color: #f16542; /*Настроить градиент*/
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.main-footer {
+  vertical-align: ;
+}
+
+.footer-social {
+  width: 200px;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.footer-info {
+  width: 420px;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.footer-copyright {
+  width: 200px;
+  display: inline-block; 
+}
+
+
+/*CSS ДЛЯ CATALOG*/
+
+.container-breadcrumbs > ul > li {
+  display: inline-block;
+  list-style: none;
+}
+
+.main-title {
+  font-size: 35px;
+}
+
+.container-filter {
+  vertical-align: text-top;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.container-filter-select {
+  width: 194px;
+  height: 58px;
+  float: left;
+  padding: 0;
+}
+
+.sorting {
+  height: 36px;
+  border-radius: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+.container-filter-bar {
+  width: 220px;
+  height: 58px;
+  float: left;
+  padding: 0;
+}
+
+.container-filter-fat {
+  width: 415px;
+  height: 58px;
+  float: right;
+  padding: 0;
+}
+
+.container-filter-check {
+  width: 703px;
+  height: 58px;
+  float: left;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.filter-enter {
+  width: 145px;
+  height: 58px;
+  float: right;
+  margin-top: 16px;
+}
+
+.goods-blocked {
+  display: none;
+}
+
+.container-pages {
+  min-height: 97px;
+  display: block;
+  min-width: 200px;
+  margin-left: 620px;
+}
+
+.container-pages > li {
+  float: left;
+  list-style: none;
+  
 }
