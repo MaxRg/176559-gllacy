@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  </head>
+  <body class="body-index">
+    <!-- На этой странице структура немного изменится, покажут на вебинаре, когда будут разбирать слайдер -->
+    <header class="container main-heider clearfix"> <!--В отличии от страницы barbershop-item сделал логотип и меню в разных блоках, так как логотп существено крупней меню. Целесообразно это?-->
+      <div class="heider-logo">
+        <img src="img/gllacy-logo.svg" width="154" height="64" alt="Gllacy Shop">
+      </div>
+    <!--Учтено--><!-- Смотри замечания на страницие gllacy-catalog.html -->
+        <nav class="heider-navigation">
+          <ul class="top-ul">
+            <li class="heider-catalog top-li-item">
+              <a href="#" class="top-link">Каталог</a>
+              <ul class="heider-sub-menu">
+                <li class="second-li-item">
+                  <a href="#" class="second-link second-link-new">Новинки</a>
+                </li>
+                <li class="second-li-item">
+                  <a href="/gllacy-catalog.html" class="second-link">Сливочное</a>
+                </li>
+                <li class="second-li-item">
+                  <a href="#" class="second-link">Щербеты</a>
+                </li>
+                <li class="second-li-item">
+                  <a href="#" class="second-link">Фруктовый лед</a>
+                </li>
+                <li class="second-li-item">
+                  <a href="#" class="second-link">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+            <li class="top-li-item">
+              <a href="#" class="top-link">Доставка и оплата</a>
+            </li>
+            <li class="top-li-item">
+              <a href="#" class="top-link">О Компании</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="heider-user-block">
+        <ul class="user-block-ul clearfix">
+          <li class="heider-search">
+            <form action="#" method="get" class="heider-search-block">
+              <input type="text" name="search" placeholder="Что ищем?">
+            </form>
+          </li>
+          <li class="heider-enter">
+            <span class="heider-enter-word">Вход</span>
+            <div class="heider-enter-block">
+              <form action="#" method="post" name="enter" id="enter">
+                <input type="email" name="email" placeholder="Электронная почта">
+                <input type="password" name="password" placeholder="Пароль">
+                <input type="submit" name="enter" value="Войти">
+              </form>
+              <div class="enter-block-help">
+                <a href="#" class="forget-password">Забыли пароль?</a>  
+                <a href="#" class="log-in">Новая регистрация</a>
+              </div>
+            </div>
+          </li>
+          <li class="heider-basket">
+            <span class="heider-basket-word">Пусто</span>
+<!--            <span class="heider-basket-full">2 товара</span>-->
+            <div class="heider-basket-block">
+              <table class="basket-table">
+                <tr class="basket-order-line">
+                  <td>
+                    <button type="button" title="Закрыть" class="basket-close"></button></td>
+                  <td>
+                    <img src="img/gllacy-index/gllacy-basket-icecream-1.png" width="33" height="33" alt="Пломбир" class="basket-image">
+                  </td>
+                  <td class="basket-name">Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг х <span class="basket-light-text">200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr class="basket-order-line">
+                  <td>
+                    <button type="button" title="Закрыть" class="basket-close"></button></td>
+                  <td>
+                    <img src="img/gllacy-index/gllacy-basket-icecream-2.png" width="33" height="33" alt="Клубничный пломбир" class="basket-image">
+                  </td>
+                  <td class="basket-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг х <span class="basket-light-text">300 руб.</span></td>
+                  <td>450 руб.</td>
+                </tr>
+                <tr class="basket-order-line">
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td colspan="2" class="basket-summary">Итого: 750 руб.</td>
+                </tr>
+              </table>
+              <a href="#" class="basket-button-make">Оформить заказ</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="container">
+      <div class="main-contact"> <!--Перенес сюда этот блок из heider-->
+        <p class="main-time-table">С 10 до 20, ежедневно</p>
+        <p class="main-phone">8 812 450-25-25</p>
+      </div>
+        <!-- Пока не делаем, покажут на вебинаре как сделать слайдер -->
+      <div class="main-banner">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slider-inner">
+          <div class="slider-slides">
+            <div class="slider-slide slider-slides-1">
+              <h1 class="slider-name">Крем-брюле и пломбир с малиновым джемом</h1>
+<!--              <img src="http://placehold.it/150x100" width="150" height="100" alt="Крем-брюле и пломбир">-->
+              <a href="#" class="slider-slides-link">Давайте оба!</a>
+            </div>
+            <!--<div class="slider-slide slider-slides-2">
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное мороженое">
+              <a href="#" class="slider-slides-link">текст_текст</a>
+            </div>
+            <div class="slider-slide slider-slides-3">
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="Шоколадное мороженое">
+              <a href="#" class="slider-slides-link">текст_текст</a>
+            </div>-->
+          </div>                    
+        </div>
+      </div>
+      <div class="container-promoaction clearfix">
+        <div class="container-promoaction-block container-promoaction-left"><!--Учтено--><!-- Лучше в классе использовать левый и правый, а не первый и второй, потмоу как блоков может быть больше 2-х -->
+          <h2 class="promoaction-title">Малинка даром!</h2><!--Учтено--><!-- Класс нужен -->
+          <p class="promoaction-text">При покупке 2 кг любого фрутового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p><!--Учтено--><!-- Класс нужен -->
+          <a href="#" class="promoaction-link">Хочу варенье!</a><!--Учтено--><!-- Класс нужен -->
+        </div>
+        <div class="container-promoaction-block container-promoaction-right">
+          <h2 class="promoaction-title">Шоколадки даром!</h2><!--Учтено--><!-- Класс нужен -->
+          <p class="promoaction-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p><!--Учтено--><!-- Класс нужен -->
+          <a href="#" class="promoaction-link">Хочу шоколадки!</a><!--Учтено--><!-- Класс нужен -->
+        </div>
+      </div>
+      <div class="container-goods">
+        <article class="goods"><!--Учтено--><!-- Класс 1-hit, 2-hit и так далее не нужны -->
+          <div class="goods-image">
+            <img src="img/gllacy-index/container-hit-1.png" width="200" height="200" alt="Мороженое">
+            <span class="goods-name"></span><!--Учтено--><!-- span-->
+            <p class="goods-cost">
+              <span>310</span>
+              <img src="/img/gllacy-icons/gllacy-icon-ruble.svg" width="32" height="37" alt="руб.">
+              <span class="goods-cost-weight">/кг</span>
+          </p><!--Учтено--><!-- P - будет картинкой -->
+          </div><!--Учтено--><!-- Добавить img и перенести сюда хит -->
+          <p class="goods-text">
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a><!--Учтено--><!-- Обернуть ссылку в p -->
+          </p>
+        <a href="#" class="goods-blocked">Быстрый просмотр</a>
+        </article>
+        <article class="goods">
+          <div class="goods-image">
+            <img src="img/gllacy-index/container-hit-2.png" width="200" height="200" alt="Мороженое">
+            <span class="goods-name"></span>
+            <p class="goods-cost">
+            <span>380</span>
+            <img src="/img/gllacy-icons/gllacy-icon-ruble.svg" width="32" height="37" alt="руб.">
+            <span class="goods-cost-weight">/кг</span>
+          </p>
+          </div>
+          <p class="goods-text">
+            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          </p>
+          <a href="#" class="goods-blocked">Быстрый просмотр</a>
+        </article>
+        <article class="goods">
+          <div class="goods-image">
+            <img src="img/gllacy-index/container-hit-3.png" width="200" height="200" alt="Мороженое">
+            <span class="goods-name"></span>
+            <p class="goods-cost">
+            <span>355</span>
+            <img src="/img/gllacy-icons/gllacy-icon-ruble.svg" width="32" height="37" alt="руб.">
+            <span class="goods-cost-weight">/кг</span>
+            </p>
+          </div>
+          <p class="goods-text">
+            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </p>
+          <a href="#" class="goods-blocked">Быстрый просмотр</a>
+        </article>
+        <article class="goods">
+          <div class="goods-image">
+            <img src="img/gllacy-index/container-hit-4.png" width="200" height="200" alt="Мороженое">
+            <span class="goods-name"></span>
+            <p class="goods-cost">
+              <span>415</span>
+              <img src="/img/gllacy-icons/gllacy-icon-ruble.svg" width="32" height="37" alt="руб.">
+              <span class="goods-cost-weight">/кг</span>
+          </p>
+          </div>
+          <p class="goods-text">
+            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          </p>
+          <a href="#" class="goods-blocked">Быстрый просмотр</a>
+        </article>
+      </div>
+      <section class="features">
+        <h3 class="features-title">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+<!--Учтено--><!-- Можно не делить на левые и правые, можно их подряд сделать, но только последовательность будет по исконкам смотрим: мороженое, коровка, листик, градусник -->
+          <div class="features-item">
+              <span class="features-icon features-icon-1"></span><!--Учтено--><!-- Не нужен img. Либо через псевдоэлемент, либо через span - а ему фоном повесим -->
+            <p class="features-item-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          </div>
+          <div class="features-item">
+            <span class="features-icon features-icon-2"></span>
+            <p class="features-item-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          </div>
+          <div class="features-item">
+            <span class="features-icon features-icon-3"></span>
+            <p class="features-item-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные игредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          </div>
+          <div class="features-item">
+            <span class="features-icon features-icon-4"></span>
+            <p class="features-item-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+          </div>
+      </section>
+      <div class="container-blog-mail clearfix">
+        <div class="container-blog">
+          <p class="container-blog-title">Новое в нашем блоге</p>
+          <a href="#" class="container-blog-link">10 способов сервировки фруктовых щербетов <br> к столу</a>
+        </div>
+        <section class="container-mailing">
+          <p class="container-mailing-title">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды.Честно=)</p>
+          <form action="#" method="post">
+            <input type="email" placeholder="Электронная почта" name="email" class="mailing-email">
+            <input type="submit" name="send" value="Отправить" class="mailing-sent">
+          </form>
+        </section>
+      </div>
+    </main>
+    <div class="container-map-contacts">
+      <div class="container-map">
+        <a href="#" class="map-link"></a>
+      </div>
+      <span class="map-point"></span>
+      <section class="map-contacts">    
+        <p>Адрес главного офиса и офлайн магазина:</p>
+        <p class="map-contacts-bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+        <p>Для заказов по телефону:</p>
+        <p class="map-contacts-bold">8 812 450-25-25</p>
+        <p>(с 10 до 20 ежедневно)</p>
+        <a href="#openModal" class="map-modalwindow">Форма обратной связи</a>
+      </section>
+    </div>
+    <footer class="container main-footer clearfix"><!--Там только одно замечание для footer--><!-- Смотри замечания на странице gllacy-catalog.html -->
+      <section class="footer-social">
+        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>          
+      </section>
+      <section class="footer-info">
+        <div class="footer-info-left">
+          <a href="#" class="footer-info-supplier">Для поставщиков</a>
+          <a href="#">О производстве</a>
+        </div>
+        <div class="footer-info-right">
+          <a href="#">Наши документы</a>
+          <a href="#">Экологические стандарты</a>
+        </div>
+      </section>
+      <section class="footer-copyright">
+        <img src="/img/gllacy-icons/gllacy-footer-logoHTML.svg" width="108" height="37" alt="Логотип HTML Academy">
+        <p>Сделано в
+          <a href="http://htmlacademy.ru">HTML Academy</a>
+          	&copy; 2016</p>
+      </section>
+    </footer>
+    <!--Всплывающая форма-->
+    <div class="modalwindow-overlay">
+      <form action="#" method="post" class="map-modalwindow-block">
+        <button type="button" class="icon-close" title="Закрыть"></button>
+        <p>Мы обязательно вам ответим!</p>
+        <input type="text" name="name" placeholder="Как вас зовут?">
+        <input type="email" name="email" placeholder="Ваша почта для ответа?">
+        <textarea type="text" name="question" placeholder="Напишите что-нибудь..." class="modalwindow-question"></textarea>
+        <input type="submit" name="sent" value="Отправить">
+      </form>
+    </div>
+  </body>
+</html>
